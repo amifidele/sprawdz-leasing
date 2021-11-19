@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div>
+    <div class="text-center">
 
         <h1 class="text-4xl">Leasing Calcutor</h1>
 

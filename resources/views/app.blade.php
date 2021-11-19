@@ -2,8 +2,12 @@
 
     @section('content')
     <div class="w-100">
+        <div class="absolute w-100 z-0 h-full">
+            <img class="bg-container" style="width: 100%; height: 80%; -o-object-fit: cover !important;
+            object-fit: cover !important;" src="{{ asset('images/AdobeStock_252883460-scaled.jpeg') }}">
+        </div>
 
-        <div class="flex ">
+        <div class="flex w-100 relative z-1">
 
             <div class="flex-1 pl-12 pt-28 text-gray-800">
 
@@ -15,10 +19,10 @@
 
                 <div class="mt-8">
                     <a href="{{ route('leasing.calculator') }}">
-                    <button class="bg-green-500 py-2 px-4 rounded text-white inline-block ">Leasing Calculator</button>
+                    <button class="bg-green-500 py-3 px-4 rounded text-white inline-block ">Leasing Calculator</button>
                     </a>
                     <a href="{{ route('compare.offers') }}">
-                    <button class="bg-green-500 py-2 mx-2 px-4 rounded text-white inline-block">Compare Offers</button>
+                    <button class="bg-green-500 py-3 mx-2 px-6 rounded text-white inline-block">Compare Offers</button>
                     </a>
                 </div>
 

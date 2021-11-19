@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body class="m-0 p-0">
 
     <div class="w-100 pr-12 border pl-12 bg-white py-4 flex flex-wrap ">
  
@@ -31,7 +31,7 @@
                 <li class="mx-2 inline-block">
                     <a href="{{ route('compare.offers') }}">Compare Offers</a></li>
                 <li class="mx-3 inline-block">
-                    <button class="bg-green-500 py-2 px-4 rounded text-white">
+                    <button class="border-green-500 font-bold border-2 py-2 px-4 rounded-full text-green-500 hover:text-white hover:bg-green-500">
                         +48 32 724 77 47
                     </button>
                 </li>
