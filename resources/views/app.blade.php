@@ -14,8 +14,12 @@
                 </div>
 
                 <div class="mt-8">
+                    <a href="{{ route('leasing.calculator') }}">
                     <button class="bg-green-500 py-2 px-4 rounded text-white inline-block ">Leasing Calculator</button>
+                    </a>
+                    <a href="{{ route('compare.offers') }}">
                     <button class="bg-green-500 py-2 mx-2 px-4 rounded text-white inline-block">Compare Offers</button>
+                    </a>
                 </div>
 
             </div>
