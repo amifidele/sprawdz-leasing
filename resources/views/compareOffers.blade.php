@@ -10,12 +10,12 @@
 
 
         <div class="w-6/12 m-auto mt-8 text-gray-500">
-            <form method="POST" action="{{ route('store.leasing.comparisson') }}" 
+            <form method="POST" action="{{ route('store.leasing.comparison') }}" 
             oninput="x_redemption.value=parseInt(redemption.value), x_deposit.value=parseInt(deposit.value)">
 
             @csrf
 
-            <input type="hidden" name="objective" value="leasing_comparison">
+            <input type="hidden" name="objective" value="leasing_comparisson">
 
             <div class="">
                 <label class="font-medium">Select the item you want to lease : *</label>
@@ -122,7 +122,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <button class="bg-green-500 py-3 mx-2 px-6 rounded text-white inline-block">Calculate the leasing Installment</button>
+                <button class="bg-green-500 py-3 mx-2 px-6 rounded text-white inline-block">Compare Leasing Offers</button>
             </div>
 
 

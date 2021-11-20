@@ -29,7 +29,7 @@ class PagesController extends Controller
     }
 
     public function succcessComparison(){
-        return view('successComparisson');
+        return view('successComparison');
     }
 
 }

@@ -19,11 +19,11 @@ Route::get('/leasing-calculator', 'App\Http\Controllers\PagesController@leasingC
 
 Route::post('/leasing-calculator', 'App\Http\Controllers\LeasingController@storeCalculator')->name('store.leasing.calculator');
 
-Route::post('/leasing-comparisson', 'App\Http\Controllers\LeasingController@storeCalculator')->name('store.leasing.comparisson');
+Route::post('/leasing-comparison', 'App\Http\Controllers\LeasingController@storeComparison')->name('store.leasing.comparison');
 
 Route::get('/success-calculator', 'App\Http\Controllers\PagesController@succcessCalculator')->name('success.calculator');
 
-Route::get('/success-comparisson', 'App\Http\Controllers\PagesController@succcessCalculator')->name('success.calculator');
+Route::get('/success-comparison', 'App\Http\Controllers\PagesController@succcessComparison')->name('success.comparison');
 
 Route::get('/compare-offers', 'App\Http\Controllers\PagesController@compareOffers')->name('compare.offers');
 

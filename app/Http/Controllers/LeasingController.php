@@ -111,7 +111,7 @@ class LeasingController extends Controller
         $l_calculator->additional_information = $request->input('additional_information');
         $l_calculator->save();
 
-        return redirect('/success-comparison');
+        return redirect('/success-comparisson');
 
         
         
