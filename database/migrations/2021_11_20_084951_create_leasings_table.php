@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCalculatorsTable extends Migration
+class CreateLeasingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateCalculatorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('calculators', function (Blueprint $table) {
+        Schema::create('leasings', function (Blueprint $table) {
             $table->id();
+            $table->string('objective');
             $table->string('item_name');
             $table->string('financing_type');
             $table->integer('item_price');
-            $table->string('production_data');
+            $table->string('production_date');
             $table->integer('self_deposit');
             $table->integer('number_of_installment');
             $table->string('redemption_value');
@@ -38,6 +39,6 @@ class CreateCalculatorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('calculators');
+        Schema::dropIfExists('leasings');
     }
 }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CalculatorController extends Controller
+class LeasingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -32,9 +32,9 @@ class CalculatorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storeCalculator(Request $request)
     {
-        //
+        
     }
 
     /**
