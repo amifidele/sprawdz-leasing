@@ -20,14 +20,14 @@ class CreateLeasingsTable extends Migration
             $table->string('financing_type');
             $table->integer('item_price');
             $table->string('production_date');
-            $table->integer('self_deposit');
+            $table->integer('self_deposit')->nullable();
             $table->integer('number_of_installment');
-            $table->string('redemption_value');
-            $table->string('most_caring');
-            $table->string('company_tax_id');
+            $table->string('redemption_value')->nullable();
+            $table->string('most_caring')->nullable();
+            $table->string('company_tax_id')->nullable();
             $table->string('phone_number');
             $table->string('email');
-            $table->mediumText('additional_information');
+            $table->mediumText('additional_information')->nullable();
             $table->timestamps();
         });
     }
