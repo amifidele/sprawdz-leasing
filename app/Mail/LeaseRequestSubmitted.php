@@ -9,7 +9,7 @@ use Illuminate\Queue\SerializesModels;
 
 use App\Models\Leasing;
 
-class LeaseRequestSubmited extends Mailable
+class LeaseRequestSubmitted extends Mailable
 {
     use Queueable, SerializesModels;
 

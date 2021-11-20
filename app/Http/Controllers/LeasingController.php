@@ -10,6 +10,13 @@ use Validator;
 
 use Illuminate\Support\Facades\Redirect;
 
+use Illuminate\Support\Facades\Mail;
+
+use App\Mail\LeaseRequestSent;
+
+use App\Mail\LeaseRequestSubmited;
+
+
 class LeasingController extends Controller
 {
     /**
@@ -71,6 +78,8 @@ class LeasingController extends Controller
         $leasing->email = $request->input('email');
         $leasing->additional_information = $request->input('additional_information');
         $leasing->save();
+
+        Mail::send(new LeaseRequestSubmitted($leasing));
 
         return redirect('/success-calculator');
 
