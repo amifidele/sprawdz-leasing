@@ -17,4 +17,9 @@ Route::get('/', 'App\Http\Controllers\PagesController@index')->name('home');
 
 Route::get('/leasing-calculator', 'App\Http\Controllers\PagesController@leasingCalculator')->name('leasing.calculator');
 
+Route::post('/leasing-calculator', 'App\Http\Controllers\LeasingController@storeCalculator')->name('store.leasing.calculator');
+
+Route::get('/success-calculator', 'App\Http\Controllers\PagesController@succcessCalculator')->name('success.calculator');
+
 Route::get('/compare-offers', 'App\Http\Controllers\PagesController@compareOffers')->name('compare.offers');
+

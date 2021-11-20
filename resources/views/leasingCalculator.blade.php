@@ -10,7 +10,10 @@
 
 
         <div class="w-6/12 m-auto mt-8 text-gray-500">
-            <form oninput="x_redemption.value=parseInt(redemption.value), x_deposit.value=parseInt(deposit.value)">
+            <form method="POST" action="{{ route('store.leasing.calculator') }}" 
+            oninput="x_redemption.value=parseInt(redemption.value), x_deposit.value=parseInt(deposit.value)">
+
+            @csrf
 
             <input type="hidden" name="objective" value="leasing_calculator">
 
@@ -55,8 +58,8 @@
             </div>
 
             <div class="mt-3">
-                <label class="font-medium">Self Deposit : *</label>
-                <input type="range" min="1" max="45" id="deposit"  class=" border w-full mt-2" name="self_deposite">
+                <label class="font-medium">Self Deposit  (%): *</label>
+            <input type="range" min="1" max="45" id="deposit" class=" border w-full mt-2" name="self_deposit">
                 <output for="deposit" name="x_deposit"></output>
                 
                 {{-- <output for="redemption" name="x" oninput="x.value=parseInt(redemption.value)">00</output> --}}
@@ -78,7 +81,7 @@
             </div>
 
             <div class="mt-3">
-                <label class="font-medium">Redemption Value : *</label>
+                <label class="font-medium">Redemption Value (%) : *</label>
                 <input type="range" min="1" max="50"  id="redemption" class=" border w-full mt-2" name="redemption_value">
                 <output for="redemption" name="x_redemption" ></output>
 

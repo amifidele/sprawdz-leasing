@@ -24,4 +24,8 @@ class PagesController extends Controller
 
     }
 
+    public function succcessCalculator(){
+        return view('successCalculator');
+    }
+
 }
