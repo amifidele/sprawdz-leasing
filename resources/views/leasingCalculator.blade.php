@@ -50,6 +50,8 @@
             <div class="mt-3">
                 <label class="font-medium">Self Deposit : *</label>
                 <input type="range" min="1" max="45" value="20"  class=" border w-full mt-2">
+                
+                <output for="redemption" name="x" oninput="x.value=parseInt(redemption.value)">00</output>
 
             </div>
 

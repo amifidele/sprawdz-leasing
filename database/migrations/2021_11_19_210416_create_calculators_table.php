@@ -21,6 +21,7 @@ class CreateCalculatorsTable extends Migration
             $table->string('production_data');
             $table->integer('self_deposit');
             $table->integer('number_of_installment');
+            $table->string('redemption_value');
             $table->string('most_caring');
             $table->string('company_tax_id');
             $table->string('phone_number');
