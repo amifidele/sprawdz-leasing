@@ -9,7 +9,7 @@ use Illuminate\Queue\SerializesModels;
 
 use App\Models\Leasing;
 
-class LeaseRequestSent extends Mailable
+class LeaseCalculatorSubmitted extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -32,9 +32,10 @@ class LeaseRequestSent extends Mailable
      */
     public function build()
     {
-        $subject = $this->leasing->objective;
-        return $this->to($this->leasing->email)
-                    ->subject("$subject Dziękujemy za skorzystanie z kalkulatora leasingu")
-                    ->view('view.name');
+        return $this->to("admin@sprawdzleasing.pl")
+                    ->cc("owner@sprawdzleasing.pl")
+                    ->subject($this->leasing->objective)
+                    ->from('admin@sprawdzleasing.com')
+                    ->view('emails.admin');
     }
 }
