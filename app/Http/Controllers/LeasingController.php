@@ -56,21 +56,21 @@ class LeasingController extends Controller
             'additional_information' => 'nullable',
         ]);
         
-        $l_calculator = new Leasing;
-        $l_calculator->objective = $request->input('objective');
-        $l_calculator->item_name = $request->input('item_name');
-        $l_calculator->financing_type = $request->input('financing_type');
-        $l_calculator->item_price = $request->input('item_price');
-        $l_calculator->production_date = $request->input('production_date');
-        $l_calculator->self_deposit = $request->input('self_deposit');
-        $l_calculator->number_of_installment = $request->input('number_of_installment');
-        $l_calculator->redemption_value = $request->input('redemption_value');
-        $l_calculator->most_caring = $request->input('most_caring');
-        $l_calculator->company_tax_id = $request->input('company_tax_id');
-        $l_calculator->phone_number = $request->input('phone_number');
-        $l_calculator->email = $request->input('email');
-        $l_calculator->additional_information = $request->input('additional_information');
-        $l_calculator->save();
+        $leasing = new Leasing;
+        $leasing->objective = $request->input('objective');
+        $leasing->item_name = $request->input('item_name');
+        $leasing->financing_type = $request->input('financing_type');
+        $leasing->item_price = $request->input('item_price');
+        $leasing->production_date = $request->input('production_date');
+        $leasing->self_deposit = $request->input('self_deposit');
+        $leasing->number_of_installment = $request->input('number_of_installment');
+        $leasing->redemption_value = $request->input('redemption_value');
+        $leasing->most_caring = $request->input('most_caring');
+        $leasing->company_tax_id = $request->input('company_tax_id');
+        $leasing->phone_number = $request->input('phone_number');
+        $leasing->email = $request->input('email');
+        $leasing->additional_information = $request->input('additional_information');
+        $leasing->save();
 
         return redirect('/success-calculator');
 
@@ -95,23 +95,23 @@ class LeasingController extends Controller
             'additional_information' => 'nullable',
         ]);
         
-        $l_calculator = new Leasing;
-        $l_calculator->objective = $request->input('objective');
-        $l_calculator->item_name = $request->input('item_name');
-        $l_calculator->financing_type = $request->input('financing_type');
-        $l_calculator->item_price = $request->input('item_price');
-        $l_calculator->production_date = $request->input('production_date');
-        $l_calculator->self_deposit = $request->input('self_deposit');
-        $l_calculator->number_of_installment = $request->input('number_of_installment');
-        $l_calculator->redemption_value = $request->input('redemption_value');
-        $l_calculator->most_caring = $request->input('most_caring');
-        $l_calculator->company_tax_id = $request->input('company_tax_id');
-        $l_calculator->phone_number = $request->input('phone_number');
-        $l_calculator->email = $request->input('email');
-        $l_calculator->additional_information = $request->input('additional_information');
-        $l_calculator->save();
+        $leasing = new Leasing;
+        $leasing->objective = $request->input('objective');
+        $leasing->item_name = $request->input('item_name');
+        $leasing->financing_type = $request->input('financing_type');
+        $leasing->item_price = $request->input('item_price');
+        $leasing->production_date = $request->input('production_date');
+        $leasing->self_deposit = $request->input('self_deposit');
+        $leasing->number_of_installment = $request->input('number_of_installment');
+        $leasing->redemption_value = $request->input('redemption_value');
+        $leasing->most_caring = $request->input('most_caring');
+        $leasing->company_tax_id = $request->input('company_tax_id');
+        $leasing->phone_number = $request->input('phone_number');
+        $leasing->email = $request->input('email');
+        $leasing->additional_information = $request->input('additional_information');
+        $leasing->save();
 
-        return redirect('/success-comparisson');
+        return redirect('/success-comparison');
 
         
         
