@@ -10,7 +10,7 @@
 
 
         <div class="w-6/12 m-auto mt-8 text-gray-500">
-            <form method="POST" action="{{ route('store.leasing.calculator') }}" 
+            <form method="POST" action="{{ route('store.leasing.comparisson') }}" 
             oninput="x_redemption.value=parseInt(redemption.value), x_deposit.value=parseInt(deposit.value)">
 
             @csrf

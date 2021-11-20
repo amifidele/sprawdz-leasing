@@ -74,9 +74,52 @@ class LeasingController extends Controller
 
         return redirect('/success-calculator');
 
+    }
+
+
+    public function storeComparison(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'objective' => 'required',
+            'item_name' => 'required',
+            'financing_type' => 'required',
+            'item_price' => 'required',
+            'production_date' => 'required',
+            'self_deposit' => 'nullable',
+            'number_of_installment' => 'required',
+            'redemption_value' => 'nullable',
+            'most_caring' => 'nullable',
+            'company_tax_id' => 'nullable',
+            'phone_number' => 'required',
+            'email' => 'required',
+            'additional_information' => 'nullable',
+        ]);
+        
+        $l_calculator = new Leasing;
+        $l_calculator->objective = $request->input('objective');
+        $l_calculator->item_name = $request->input('item_name');
+        $l_calculator->financing_type = $request->input('financing_type');
+        $l_calculator->item_price = $request->input('item_price');
+        $l_calculator->production_date = $request->input('production_date');
+        $l_calculator->self_deposit = $request->input('self_deposit');
+        $l_calculator->number_of_installment = $request->input('number_of_installment');
+        $l_calculator->redemption_value = $request->input('redemption_value');
+        $l_calculator->most_caring = $request->input('most_caring');
+        $l_calculator->company_tax_id = $request->input('company_tax_id');
+        $l_calculator->phone_number = $request->input('phone_number');
+        $l_calculator->email = $request->input('email');
+        $l_calculator->additional_information = $request->input('additional_information');
+        $l_calculator->save();
+
+        return redirect('/success-comparison');
+
         
         
     }
+
+
+
+
 
     /**
      * Display the specified resource.

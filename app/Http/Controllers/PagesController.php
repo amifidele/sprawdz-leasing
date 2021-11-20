@@ -28,4 +28,8 @@ class PagesController extends Controller
         return view('successCalculator');
     }
 
+    public function succcessComparison(){
+        return view('successComparisson');
+    }
+
 }

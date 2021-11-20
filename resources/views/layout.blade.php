@@ -23,7 +23,7 @@
 
             <ul class="list inline-block text-sm">
                 <li class="mx-2 inline-block">
-                    <a href="{{ route('leasing.calculator') }}">Leasing Comparisson</a>
+                    <a href="{{ route('compare.offers') }}">Leasing Comparisson</a>
                 </li>
                 <li class="mx-2 inline-block">
                     <a href="{{ route('leasing.calculator') }}">Leasing Calculator</a>
