@@ -55,7 +55,15 @@
 
             <div class="mt-3">
                 <label class="font-medium">Number of Installments : *</label>
-                <input type="integer" class="shadow appearance-none border w-full py-2 px-3 mt-2">
+                <select class="shadow appearance-none border w-full py-2 px-3 mt-2">
+                    <option>24</option>
+                    <option>35</option>
+                    <option>36</option>
+                    <option>47</option>
+                    <option>48</option>
+                    <option>59</option>
+                    <option>60</option>
+                </select>
 
             </div>
 
