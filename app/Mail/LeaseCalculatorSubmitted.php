@@ -34,7 +34,7 @@ class LeaseCalculatorSubmitted extends Mailable
     {
         return $this->to("admin@sprawdzleasing.pl")
                     ->cc("owner@sprawdzleasing.pl")
-                    ->subject($this->leasing->objective)
+                    ->subject("Leasing Calculator")
                     ->from('admin@sprawdzleasing.com')
                     ->view('emails.admin');
     }

@@ -33,8 +33,9 @@ class LeaseCalculatorSent extends Mailable
     public function build()
     {
         $subject = $this->leasing->objective;
+
         return $this->to($this->leasing->email)
-                    ->subject("$subject Dziękujemy za skorzystanie z kalkulatora leasingu")
+                    ->subject("Leasing Calculator")
                     ->from('admin@sprawdzleasing.com')
                     ->view('emails.admin');
     }

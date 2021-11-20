@@ -6,19 +6,22 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use App\Models\Leasing;
 
 class LeaseComparisonSent extends Mailable
 {
     use Queueable, SerializesModels;
+
+    public $leasing;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Leasing $leasing)
     {
-        //
+        $this->leasing = $leasing;
     }
 
     /**
@@ -28,6 +31,10 @@ class LeaseComparisonSent extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        $subject = $this->leasing->objective;
+        return $this->to($this->leasing->email)
+                    ->subject("Comparison received")
+                    ->from('admin@sprawdzleasing.com')
+                    ->view('emails.admin');
     }
 }

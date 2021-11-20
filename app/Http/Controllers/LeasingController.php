@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Mail;
 
 use App\Mail\LeaseCalculatorSent;
-
 use App\Mail\LeaseCalculatorSubmitted;
+
+use App\Mail\LeaseComparisonSent;
+use App\Mail\LeaseComparisonSubmitted;
+
 
 
 class LeasingController extends Controller
@@ -79,8 +82,8 @@ class LeasingController extends Controller
         $leasing->additional_information = $request->input('additional_information');
         $leasing->save();
 
-        Mail::send(new LeaseRequestSubmitted($leasing));
-        Mail::send(new LeaseRequestSent($leasing));
+        Mail::send(new LeaseCalculatorSent($leasing));
+        Mail::send(new LeaseCalculatorSubmitted($leasing));
 
 
         return redirect('/success-calculator');
@@ -122,8 +125,8 @@ class LeasingController extends Controller
         $leasing->additional_information = $request->input('additional_information');
         $leasing->save();
 
-        Mail::send(new LeaseRequestSubmitted($leasing));
-        Mail::send(new LeaseRequestSent($leasing));
+        Mail::send(new LeaseComparisonSent($leasing));
+        Mail::send(new LeaseComparisonSubmitted($leasing));
 
         return redirect('/success-comparison');
 
