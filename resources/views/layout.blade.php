@@ -12,24 +12,31 @@
 
     <div class="w-100 pr-12 border pl-12 bg-white py-4 flex flex-wrap ">
  
-        <div class="flex-1 pt-2">
+        <div class="w-4/12 pt-2">
             <a href="{{ route('home') }}">
             <img class="w-28" src="{{ asset('images/cropped-Logo@4x.png') }}">
             </a>
 
         </div>
 
-        <div class="flex-1 py-2 bg-white text-right text-gray-600">
+        <div class="w-8/12 py-2 bg-white text-right text-gray-600">
 
             <ul class="list inline-block text-sm">
+
                 <li class="mx-2 inline-block">
                     <a href="{{ route('compare.offers') }}">Leasing Comparisson</a>
                 </li>
+
                 <li class="mx-2 inline-block">
                     <a href="{{ route('leasing.calculator') }}">Leasing Calculator</a>
                 </li>
+
                 <li class="mx-2 inline-block">
-                    <a href="{{ route('compare.offers') }}">Compare Offers</a></li>
+                    <a href="{{ route('compare.offers') }}">Insurance Form</a></li>
+
+                <li class="mx-2 inline-block">
+                <a href="{{ route('compare.offers') }}">New Car Form</a></li>
+
                 <li class="mx-3 inline-block">
                     <button class="border-green-500 font-bold border-2 py-2 px-4 rounded-full text-green-500 hover:text-white hover:bg-green-500">
                         +48 32 724 77 47
