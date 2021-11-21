@@ -47,7 +47,7 @@ class NewCarController extends Controller
             'phone_number' => 'required',
             'email' => 'required',
             'additional_information' => 'nullable'
-        ])
+        ]);
         
         $car = new NewCar;
         $car->brand = request('brand');

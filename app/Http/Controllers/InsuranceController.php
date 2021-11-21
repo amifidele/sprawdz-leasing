@@ -59,7 +59,7 @@ class InsuranceController extends Controller
             'number_nip' => 'nullable',
             'phone_number' => 'required',
             'company_address' => 'required'
-        ])
+        ]);
         
         $insurance = new Insurance;
         $insurance->vehicle_type = request('vehicle');
