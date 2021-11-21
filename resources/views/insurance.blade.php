@@ -8,7 +8,7 @@
 
 <div class="w-6/12 m-auto pt-6  text-gray-500">
 
-    <form method="POST">
+    <form method="POST" action="{{ route('store.insurance') }}">
         @csrf
         
             <div class="mt-3">
