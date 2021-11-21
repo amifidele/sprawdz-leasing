@@ -60,7 +60,7 @@ class NewCarController extends Controller
         $car->additional_information = request('additional_information');
         $car->save();
 
-        return redirect('/success-calculator');
+        return redirect('/thankyou');
 
     }
 

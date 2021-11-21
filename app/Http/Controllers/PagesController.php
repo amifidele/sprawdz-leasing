@@ -40,4 +40,8 @@ class PagesController extends Controller
         return view('insurance');
     }
 
+    public function thankyou(){
+        return view('thankyou');
+    }
+
 }

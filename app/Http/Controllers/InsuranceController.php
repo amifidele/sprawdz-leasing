@@ -86,7 +86,7 @@ class InsuranceController extends Controller
         $insurance->company_address = request('company_address');
         $insurance->save();
 
-        return redirect('/success-calculator');
+        return redirect('/thankyou');
 
     }
 
