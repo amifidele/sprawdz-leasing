@@ -34,5 +34,5 @@ Route::post('/insurance', 'App\Http\Controllers\InsuranceController@store')->nam
 
 Route::post('/new-car', 'App\Http\Controllers\NewCarController@store')->name('store.newcar');
 
-Route::get('/thank-you', 'App\Http\Controllers\PagesController@thankyou')->namea('thankyou');
+Route::get('/thankyou', 'App\Http\Controllers\PagesController@thankyou')->name('thankyou');
 
