@@ -27,3 +27,6 @@ Route::get('/success-comparison', 'App\Http\Controllers\PagesController@succcess
 
 Route::get('/compare-offers', 'App\Http\Controllers\PagesController@compareOffers')->name('compare.offers');
 
+Route::get('/new-car', 'App\Http\Controllers\PagesController@newCar')->name('newcar');
+Route::get('/insurance', 'App\Http\Controllers\PagesController@insurance')->name('insurance');
+
