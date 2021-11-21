@@ -122,7 +122,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <button class="bg-green-500 py-3 mx-2 px-6 rounded text-white inline-block">Send</button>
+                <button class="bg-green-500 py-3 mx-2 px-12 rounded text-white inline-block">Send</button>
             </div>
 
     </form>
