@@ -83,7 +83,7 @@
             <div class="mt-3">
                 <label class="font-medium">Redemption Value (%) : *</label>
                 <input type="range" min="1" max="50"  id="redemption" class=" border w-full mt-2" name="redemption_value">
-                <output for="redemption" name="x_redemption" ></output>
+                 <output for="redemption" name="x_redemption" ></output>
 
             </div>
 
