@@ -10,7 +10,7 @@
 
 <div class="w-6/12 m-auto pt-6 text-gray-500">
 
-    <form method="post">
+    <form method="post" action="{{ route('store.newcar') }}">
 
         <div class="mt-3">
             <label class="font-medium">Brand *</label>
