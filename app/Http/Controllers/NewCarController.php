@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\NewCar;
 
+use Validator;
+
 class NewCarController extends Controller
 {
     /**
@@ -35,6 +37,17 @@ class NewCarController extends Controller
      */
     public function store(Request $request)
     {
+
+        $validator = Validator::make($request->all(), [
+            'brand' => 'required',
+            'model' => 'required',
+            'engine_type' => 'required',
+            'body_type' => 'required',
+            'version' => 'nullable',
+            'phone_number' => 'required',
+            'email' => 'required',
+            'additional_information' => 'nullable'
+        ])
         
         $car = new NewCar;
         $car->brand = request('brand');
