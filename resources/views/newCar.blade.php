@@ -11,6 +11,7 @@
 <div class="w-6/12 m-auto pt-6 text-gray-500">
 
     <form method="post" action="{{ route('store.newcar') }}">
+        @csrf
 
         <div class="mt-3">
             <label class="font-medium">Brand *</label>
@@ -23,13 +24,29 @@
         </div>
 
         <div class="mt-3">
+
             <label class="font-medium">Engine Type *</label>
-            <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="engine_type">
+
+            <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="engine_type">
+                <option value="Gas">Gas</option>
+                <option value="Gasoline + LPG">Gasoline + LPG </option>
+                <option value="Hybrid">Hybrid </option>
+                <option value="Diesel">Diesel </option>
+                <option value="Electric">Electric </option>
+            </select>
+
         </div>
         
         <div class="mt-3">
             <label class="font-medium">Body Type *</label>
-            <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="body_type">
+            <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="body_type">
+                <option value="sedan">Sedan</option>
+                <option value="combi">Combi</option>
+                <option value="hatchback">HatchBack</option>
+                <option value="suv">SUV</option>
+                <option value="the wagon">The wagon</option>
+                <option value="different">different</option>
+            </select>
         </div>
 
         <div class="mt-3">
