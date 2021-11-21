@@ -30,6 +30,7 @@ Route::get('/compare-offers', 'App\Http\Controllers\PagesController@compareOffer
 Route::get('/new-car', 'App\Http\Controllers\PagesController@newCar')->name('newcar');
 Route::get('/insurance', 'App\Http\Controllers\PagesController@insurance')->name('insurance');
 
-Route::post('/insurance', 'App\Http\Controllers\InsuranceController@store')->name('insurance.store');
+Route::post('/insurance', 'App\Http\Controllers\InsuranceController@store')->name('store.insurance');
 
+Route::post('/new-car', 'App\Http\Controllers\NewCarController@store')->name('store.newcar');
 
