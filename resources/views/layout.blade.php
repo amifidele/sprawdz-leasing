@@ -32,10 +32,10 @@
                 </li>
 
                 <li class="mx-2 inline-block">
-                    <a href="{{ route('compare.offers') }}">Insurance Form</a></li>
+                    <a href="{{ route('insurance') }}">Insurance Form</a></li>
 
                 <li class="mx-2 inline-block">
-                <a href="{{ route('compare.offers') }}">New Car Form</a></li>
+            <a href="{{ route('newcar') }}">New Car Form</a></li>
 
                 <li class="mx-3 inline-block">
                     <button class="border-green-500 font-bold border-2 py-2 px-4 rounded-full text-green-500 hover:text-white hover:bg-green-500">

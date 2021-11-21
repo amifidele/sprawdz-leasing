@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\NewCar;
 
 class NewCarController extends Controller
 {
@@ -34,7 +35,18 @@ class NewCarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $car = new NewCar;
+        $car->brand = request('brand');
+        $car->model = request('model');
+        $car->engine_type = request('engine_type');
+        $car->body_type = request('body_type');
+        $car->version = request('version');
+        $car->phone_number = request('phone_number');
+        $car->email = request('email');
+        $car->additional_information = request('additional_information');
+        $car->save();
+
     }
 
     /**

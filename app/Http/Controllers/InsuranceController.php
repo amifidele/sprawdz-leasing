@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Insurance;
 
 class InsuranceController extends Controller
 {
@@ -34,7 +35,11 @@ class InsuranceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $insurance = new Insurance;
+        $insurance->vehicle_type = request('vehicle')
+
+
     }
 
     /**
