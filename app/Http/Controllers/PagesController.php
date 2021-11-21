@@ -32,4 +32,12 @@ class PagesController extends Controller
         return view('successComparison');
     }
 
+    public function newCar(){
+        return view('newCar');
+    }
+
+    public function insurance(){
+        return view('insurance');
+    }
+
 }
