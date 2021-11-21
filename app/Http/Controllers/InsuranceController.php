@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Insurance;
 
+use Validator;
+
 class InsuranceController extends Controller
 {
     /**
@@ -35,6 +37,29 @@ class InsuranceController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'vehicle_type' => 'required',
+            'brand' => 'required',
+            'model' => 'required',
+            'version' => 'nullable',
+            'engine_type' => 'required',
+            'power' => 'required',
+            'body_type' => 'required',
+            'vin_number' => 'required',
+            'vehicle_financing' => 'required',
+            'year_of_production' => 'required',
+            'first_registration_date' => 'required',
+            'vehicle_mileage' => 'required',
+            'registration_postal_code' => 'required',
+            'vehicle_parking_place' => 'required',
+            'driving_licence_issue_date' => 'required',
+            'full_names'=> 'required',
+            'email' => 'required',
+            'pesel_number' => 'nullable',
+            'number_nip' => 'nullable',
+            'phone_number' => 'required',
+            'company_address' => 'required'
+        ])
         
         $insurance = new Insurance;
         $insurance->vehicle_type = request('vehicle');
