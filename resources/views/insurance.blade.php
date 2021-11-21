@@ -13,7 +13,11 @@
         
             <div class="mt-3">
                 <label class="font-medium">Vehicle Type *</label>
-                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_type">
+                <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_type">
+                    <option value="personal">Personal</option>
+                    <option value="Truck">Truck </option>
+                    <option value="Different">Different </option>
+                </select>
             </div>
 
             <div class="mt-3">
@@ -33,7 +37,13 @@
 
             <div class="mt-3">
                 <label class="font-medium">Engine Type *</label>
-                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="engine_type">
+                <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="engine_type">
+                    <option value="Gas">Gas</option>
+                    <option value="Gasoline + LPG">Gasoline + LPG </option>
+                    <option value="Hybrid">Hybrid </option>
+                    <option value="Diesel">Diesel </option>
+                    <option value="Electric">Electric </option>
+                </select>
             </div>
 
             <div class="mt-3">
@@ -43,7 +53,14 @@
 
             <div class="mt-3">
                 <label class="font-medium">Body type *</label>
-                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="body_type">
+                <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="body_type">
+                    <option value="sedan">Sedan</option>
+                    <option value="combi">Combi</option>
+                    <option value="hatchback">HatchBack</option>
+                    <option value="suv">SUV</option>
+                    <option value="the wagon">The wagon</option>
+                    <option value="different">different</option>
+                </select>
             </div>
             
             <div class="mt-3">
@@ -58,7 +75,11 @@
 
             <div class="mt-3">
                 <label class="font-medium">Vehicle Financing *</label>
-                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_financing">
+                <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_financing">
+                    <option value="Leasing">Leasing</option>
+                    <option value="Leasing Loan">Leasing Loan</option>
+                    <option value="Cash Purchase">Cash Purchase</option>
+                </select>
             </div>
 
             <div class="mt-3">
@@ -73,7 +94,7 @@
 
             <div class="mt-3">
                 <label class="font-medium">Vehicle Mileage *</label>
-                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_milieage">
+                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_mileage">
             </div>
 
             <div class="mt-3">
@@ -83,12 +104,16 @@
 
             <div class="mt-3">
                 <label class="font-medium">Vehicle Parking Place *</label>
-                <input type="text" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_parking_place">
+                <select class="shadow appearance-none border w-full py-2 px-3 mt-2" name="vehicle_parking_place">
+                    <option value="Street">Street</option>
+                    <option value="Garage">Garage</option>
+                    <option value="Other Closed Propertie">Other Closed Propertie</option>
+                </select>
             </div>
 
             <div class="mt-3">
                 <label class="font-medium">Driving Licence Issue Date *</label>
-                <input type="date" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="driving_licence_issue_date">
+                <input type="date" class="shadow appearance-none border w-full py-2 px-3 mt-2" name="driving_license_issue_date">
             </div>
 
             <div class="mt-3">

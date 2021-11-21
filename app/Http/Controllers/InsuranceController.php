@@ -52,7 +52,7 @@ class InsuranceController extends Controller
             'vehicle_mileage' => 'required',
             'registration_postal_code' => 'required',
             'vehicle_parking_place' => 'required',
-            'driving_licence_issue_date' => 'required',
+            'driving_license_issue_date' => 'required',
             'full_names'=> 'required',
             'email' => 'required',
             'pesel_number' => 'nullable',
@@ -62,7 +62,7 @@ class InsuranceController extends Controller
         ]);
         
         $insurance = new Insurance;
-        $insurance->vehicle_type = request('vehicle');
+        $insurance->vehicle_type = request('vehicle_type');
         $insurance->brand = request('brand');
         $insurance->model = request('model');
         $insurance->version = request('version');
